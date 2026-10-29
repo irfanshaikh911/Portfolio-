@@ -1,0 +1,77 @@
+:root {
+  --color-bg: #ffffff;
+  --color-fg: #000000;
+  --color-border: #e8e8e8;
+  --color-muted: #f4f4f4;
+  --color-muted-fg: #575757;
+  --color-accent: #08b5d1;
+  --color-accent-fg: #ffffff;
+  --color-pill: #000000;
+  --color-pill-fg: #ffffff;
+  --color-cta: #08b5d1;
+  --color-cta-fg: #ffffff;
+  --shadow-cta: 0 14px 36px rgba(8, 181, 209, 0.42);
+  --font-display: 'Big Shoulders', sans-serif;
+  --font-display-condensed: 'Big Shoulders', sans-serif;
+  --font-section: 'Big Shoulders', sans-serif;
+  --font-hero: 'Anton', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-nav: 'Big Shoulders', sans-serif;
+  --nav-h: 84px;
+  --max-w: 1700px;
+  --page-inset: clamp(28px, 4.5vw, 72px);
+  --gutter: var(--page-inset);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --radius-pill: 999px;
+  --border: 1px solid var(--color-border);
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --color-bg: #0a0a0a;
+  --color-fg: #ffffff;
+  --color-border: #2a2a2a;
+  --color-muted: #141414;
+  --color-muted-fg: #9a9a9a;
+  --color-pill: #ffffff;
+  --color-pill-fg: #000000;
+  --color-cta: #08b5d1;
+  --color-cta-fg: #000000;
+  --shadow-cta: 0 8px 28px rgba(8, 181, 209, 0.28);
+  color-scheme: dark;
+}
+
+[data-accent='red'] {
+  --color-accent: #e11d2e;
+  --color-accent-fg: #ffffff;
+  --color-cta: #e11d2e;
+  --color-cta-fg: #ffffff;
+  --shadow-cta: 0 14px 36px rgba(225, 29, 46, 0.42);
+}
+
+[data-theme='dark'][data-accent='red'] {
+  --color-cta: #e11d2e;
+  --color-cta-fg: #ffffff;
+  --shadow-cta: 0 8px 28px rgba(225, 29, 46, 0.28);
+}
+
+[data-accent='green'] {
+  --color-accent: #548b29;
+  --color-accent-fg: #ffffff;
+  --color-cta: #548b29;
+  --color-cta-fg: #ffffff;
+  --shadow-cta: 0 14px 36px rgba(84, 139, 41, 0.42);
+}
+
+[data-theme='dark'][data-accent='green'] {
+  --color-cta: #548b29;
+  --color-cta-fg: #ffffff;
+  --shadow-cta: 0 8px 28px rgba(84, 139, 41, 0.28);
+}
+
+@media (max-width: 900px) {
+  :root {
+    --nav-h: 64px;
+    --page-inset: 20px;
+  }
+}
